@@ -67,22 +67,22 @@
                     </view>
                     <navigationItem key="navigationItem" id="oYC-IK-3pX">
                         <rightBarButtonItems>
-                            <barButtonItem systemItem="add" id="9La-7o-3Zv">
+                            <barButtonItem style="plain" systemItem="add" id="Mm5-u7-3GO">
                                 <connections>
-                                    <action selector="addSketch:" destination="BYZ-38-t0r" id="Qq8-fB-ewA"/>
+                                    <action selector="addDrawing:" destination="BYZ-38-t0r" id="3d4-ME-CKy"/>
                                 </connections>
                             </barButtonItem>
-                            <barButtonItem enabled="NO" systemItem="trash" id="Orx-RM-aTT">
+                            <barButtonItem style="plain" systemItem="trash" id="xYP-mT-rxU">
                                 <connections>
-                                    <action selector="deleteSketch:" destination="BYZ-38-t0r" id="TVU-2D-kCg"/>
+                                    <action selector="deleteDrawing:" destination="BYZ-38-t0r" id="GhB-sC-Av5"/>
                                 </connections>
                             </barButtonItem>
                         </rightBarButtonItems>
                     </navigationItem>
                     <connections>
-                        <outlet property="addButton" destination="9La-7o-3Zv" id="Miu-cn-4vw"/>
+                        <outlet property="addButton" destination="Mm5-u7-3GO" id="68N-KA-ydy"/>
                         <outlet property="collectionView" destination="od5-ch-9Ts" id="TVc-Eq-HU5"/>
-                        <outlet property="deleteButton" destination="Orx-RM-aTT" id="kZk-NY-0vh"/>
+                        <outlet property="deleteButton" destination="xYP-mT-rxU" id="ldK-fP-mvR"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -112,15 +112,9 @@
                                 </connections>
                             </barButtonItem>
                         </leftBarButtonItems>
-                        <barButtonItem key="rightBarButtonItem" title="Pencil" id="tK8-uf-JIA">
-                            <connections>
-                                <action selector="togglePencil:" destination="gRj-Rm-14r" id="Zh2-gI-ZKs"/>
-                            </connections>
-                        </barButtonItem>
                     </navigationItem>
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
                     <connections>
-                        <outlet property="allowFingerButton" destination="tK8-uf-JIA" id="fYq-oh-m3h"/>
                         <outlet property="redoButton" destination="edV-M5-cKk" id="6xh-BH-gd6"/>
                         <outlet property="undoButton" destination="yKM-s9-396" id="zzd-mj-xAI"/>
                     </connections>
